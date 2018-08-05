@@ -11,7 +11,6 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-
   @Input() hero: Hero;
 
   constructor(
@@ -20,7 +19,7 @@ export class HeroDetailComponent implements OnInit {
     private location: Location
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getHero();
   }
 
